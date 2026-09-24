@@ -1,5 +1,6 @@
 import requests, time, os
-TOKEN = os.environ.get("TOKEN")
+TOKEN = os.environ.get("8868049615:AAFCXbPwx-EIbpLwCja8UZbrJFpqJpvcREI")
+# bot active
 def main():
     last_id = 0
     while True:
