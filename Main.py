@@ -1,6 +1,7 @@
 import requests, time, os
-TOKEN = os.environ.get("8868049615:AAFCXbPwx-EIbpLwCja8UZbrJFpqJpvcREI")
-# bot active
+
+TOKEN = os.environ.get("TOKEN")
+
 def main():
     last_id = 0
     while True:
@@ -15,5 +16,6 @@ def main():
                     requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", data={"chat_id": chat_id, "text": "سلام! ربات 24 ساعته روشن شد ✅"})
         except:
             time.sleep(5)
+
 if __name__ == "__main__":
     main()
